@@ -1,3 +1,22 @@
 body {
 	font-family: sans-serif;
 }
+
+.txt
+{
+	font-style: italic;
+}
+
+.tooltips {
+  background: white;
+	color: purple;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.txt:hover + .tooltips
+{
+	visibility: visible;
+}
