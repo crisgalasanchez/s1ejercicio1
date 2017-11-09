@@ -2,9 +2,8 @@ body {
 	font-family: sans-serif;
 }
 
-.txt
-{
-	font-style: italic;
+span {
+	font-style: underline;
 }
 
 .tooltips {
@@ -13,10 +12,13 @@ body {
 	width: 400px;
 	height: 200px;
 	position: absolute;
-	visibility: hidden;
+	display: none;
 }
 
-.txt:hover + .tooltips
-{
-	visibility: visible;
+.lista-desplegable-item:hover .tooltips {
+	display: block;
+}
+
+.lista-desplegable-item {
+	position: relative;
 }
